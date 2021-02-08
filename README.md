@@ -32,6 +32,39 @@ Method 2 :
   - vncviewer on tunnel machine
   - notebooks
   
-  
+
+## Git
+
 In any case, keep track of the scripts with git repo, backed-up on github (sshfs on tunnel machine)
+On occigen :
+  - create a repository where to store all your git repo (on scratch), for instance `/scratch/cnt0024/ige2071/aalbert/git`
+On the tunnel machine :
+  - create a repo that will the mirror of the one on occigen, in my case `alberta@ige-meom-cal1:~/sshfs-occ-aalbert`
+  - `cd; sshfs aalbert@occigen.cines.fr:/scratch/cnt0024/ige2071/aalbert/git sshfs-occ-aalbert` 
+  - `cd sshfs-occ-aalbert`
+  - manage your git repos (git clone, git pull, git add + commit + push)
+  
+## Conda
+
+For method #2, you will need all the python librairies to deal with netcdf files, parallezition of computations, plotting and mapping
+On the tunnel machine :
+  - install conda from installer :https://docs.conda.io/en/latest/miniconda.html
+  - set up the environment with all librairies you want :
+    - `conda create --name myenv`
+    - `conda install -c conda-forge netcdf4 xarray dask numpy seawater cartopy cmocean papermill jupyter conda-pack ipykernel seaborn`
+    - `conda pack -n caledo`
+    - `scp caledo.tar.gz aalbert@occigen.cines.fr:/scratch/cnt0024/ige2071/aalbert/conda/.`
+    - `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
+    - `scp Miniconda3-latest-Linux-x86_64.sh aalbert@occigen.cines.fr:/home/aalbert/.`
+On occigen :
+    - `chmod +x Miniconda3-latest-Linux-x86_64.sh; ./Miniconda3-latest-Linux-x86_64.sh`
+    - add in .bash_aliases `alias cond="export PATH='/scratch/cnt0024/ige2071/aalbert/conda/miniconda3/bin:$PATH'"`
+    - `source .bash_aliases; cond`
+    - `cd /scratch/cnt0024/ige2071/aalbert/conda/; mkdir caledo; tar -xzf caledo.tar.gz -C caledo`
+    - `source caledo/bin/activate`
+    - `python -m ipykernel install --user --name caledo --display-name caledo`
+    
+
+    
+  
 
