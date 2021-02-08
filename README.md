@@ -36,6 +36,7 @@ Method 2 :
 ## Git
 
 In any case, keep track of the scripts with git repo, backed-up on github (sshfs on tunnel machine)
+
 On occigen :
   - create a repository where to store all your git repo (on scratch), for instance `/scratch/cnt0024/ige2071/aalbert/git`
 On the tunnel machine :
@@ -47,6 +48,7 @@ On the tunnel machine :
 ## Conda
 
 For method #2, you will need all the python librairies to deal with netcdf files, parallezition of computations, plotting and mapping
+
 On the tunnel machine :
   - install conda from installer :https://docs.conda.io/en/latest/miniconda.html
   - set up the environment with all librairies you want :
@@ -56,6 +58,7 @@ On the tunnel machine :
     - `scp caledo.tar.gz aalbert@occigen.cines.fr:/scratch/cnt0024/ige2071/aalbert/conda/.`
     - `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
     - `scp Miniconda3-latest-Linux-x86_64.sh aalbert@occigen.cines.fr:/home/aalbert/.`
+    
 On occigen :
     - `chmod +x Miniconda3-latest-Linux-x86_64.sh; ./Miniconda3-latest-Linux-x86_64.sh`
     - add in .bash_aliases `alias cond="export PATH='/scratch/cnt0024/ige2071/aalbert/conda/miniconda3/bin:$PATH'"`
