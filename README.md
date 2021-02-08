@@ -62,7 +62,9 @@ On the tunnel machine :
 On occigen :
 
     - `chmod +x Miniconda3-latest-Linux-x86_64.sh; ./Miniconda3-latest-Linux-x86_64.sh`
+    
     - add in .bash_aliases `alias cond="export PATH='/scratch/cnt0024/ige2071/aalbert/conda/miniconda3/bin:$PATH'"`
+    
     - `source .bash_aliases; cond`
     - `cd /scratch/cnt0024/ige2071/aalbert/conda/; mkdir caledo; tar -xzf caledo.tar.gz -C caledo`
     - `source caledo/bin/activate`
