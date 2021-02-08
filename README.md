@@ -17,5 +17,21 @@ Conda environments and git repo can have many files so better put it on scratch
 For now, the outputs of simulations are on /store/CT1/hmg2840/lbrodeau/TROPICO12/
 
 Two methodologies can be applied for you, depending on what you prefer :
-  1 - bash scripts and fortran librairies to compute means, eke, rmssh, etc .. then whatever you prefer for plots
-  1 - plots directly in python using jupyter-notebooks on visu nodes, attacking the raw outputs of simulation (no intermediate files)
+  - 1) bash scripts and fortran librairies to compute means, eke, rmssh, etc .. then whatever you prefer for plots
+  - 2) plots directly in python using jupyter-notebooks on visu nodes, attacking the raw outputs of simulation (no intermediate files)
+  
+  
+Method 1 :
+
+  - install CDFTOOLS
+  - bash scripts + mpi + job submission
+  
+Method 2 :
+
+  - install conda environment (conda-pack or svp)
+  - vncviewer on tunnel machine
+  - notebooks
+  
+  
+In any case, keep track of the scripts with git repo, backed-up on github (sshfs on tunnel machine)
+
