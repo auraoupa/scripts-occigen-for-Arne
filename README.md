@@ -45,7 +45,26 @@ On the tunnel machine :
   - `cd sshfs-occ-aalbert`
   - manage your git repos (git clone, git pull, git add + commit + push)
   
-## Conda
+## Method 1
+
+for fortran code, load the following modules (in your .bashrc :
+
+```
+module load intel
+module load openmpi/intel/2.0.1
+module load hdf5/1.8.17
+module load netcdf/4.4.0_fortran-4.4.2
+```
+
+
+### CDFTOOLS
+
+On the tunnel machine :
+  - go to to the repo that mirrors occigen repo for git (redo the sshfs command if needed)
+  - `git clone https://github.com/meom-group/CDFTOOLS.git`  
+  - follow the instructions here : https://github.com/meom-group/CDFTOOLS (use macro.occigen2 and be sure to have WORKDIR defined and )
+  
+### Conda
 
 For method #2, you will need all the python librairies to deal with netcdf files, parallezition of computations, plotting and mapping
 
