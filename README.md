@@ -47,7 +47,7 @@ On the tunnel machine :
   
 ## Method 1
 
-for fortran code, load the following modules (in your .bashrc :
+for fortran code, load the following modules (in your .bashrc) :
 
 ```
 module load intel
@@ -61,8 +61,16 @@ module load netcdf/4.4.0_fortran-4.4.2
 
 On the tunnel machine :
   - go to to the repo that mirrors occigen repo for git (redo the sshfs command if needed)
-  - `git clone https://github.com/meom-group/CDFTOOLS.git`  
-  - follow the instructions here : https://github.com/meom-group/CDFTOOLS (use macro.occigen2 and be sure to have WORKDIR defined and )
+  - `git clone https://github.com/meom-group/CDFTOOLS.git`
+  
+On occigen :
+  - follow the instructions here : https://github.com/meom-group/CDFTOOLS (use macro.occigen2 and be sure to have WORKDIR defined and the modules loaded)
+  - the executables are now in /scratch/cnt0024/ige2071/aalbert/git/CDFTOOLS/bin
+  
+### Bash scripts
+
+
+## Method 2
   
 ### Conda
 
