@@ -2,7 +2,7 @@
 
 All there is to know to properly look at CALEDO simulations on occigen ...
 
-On occigen, there are 2 types of space :
+On occigen, there are 3 types of space :
   - your home (/home/abendinger), limited to 100G 30 000 files
   - your scratch (/scratch/cnt0024/ige2071/abendinger), common space between all memebers of ige2071 group, limited to 20,480 Tb 900 000files in total
   - your store ( /store/abendinger ), no limitations
@@ -16,7 +16,7 @@ Conda environments and git repo can have many files so better put it on scratch
 
 For now, the outputs of simulations are on /store/CT1/hmg2840/lbrodeau/TROPICO12/
 
-Two methodologies can be applied for you, depending on what you prefer :
+Two methodologies can be applied for you, depending on what you prefer and/or what is more efficient :
   - 1) bash scripts and fortran librairies to compute means, eke, rmssh, etc .. then whatever you prefer for plots
   - 2) plots directly in python using jupyter-notebooks on visu nodes, attacking the raw outputs of simulation (no intermediate files)
   
@@ -40,7 +40,7 @@ In any case, keep track of the scripts with git repo, backed-up on github (sshfs
 On occigen :
   - create a repository where to store all your git repo (on scratch), for instance `/scratch/cnt0024/ige2071/aalbert/git`
 On the tunnel machine :
-  - create a repo that will the mirror of the one on occigen, in my case `alberta@ige-meom-cal1:~/sshfs-occ-aalbert`
+  - create a repo that will mirror the one on occigen, in my case `alberta@ige-meom-cal1:~/sshfs-occ-aalbert`
   - `cd; sshfs aalbert@occigen.cines.fr:/scratch/cnt0024/ige2071/aalbert/git sshfs-occ-aalbert` 
   - `cd sshfs-occ-aalbert`
   - manage your git repos (git clone, git pull, git add + commit + push)
@@ -61,14 +61,36 @@ On the tunnel machine :
     
 On occigen :
 
-  - `chmod +x Miniconda3-latest-Linux-x86_64.sh; ./Miniconda3-latest-Linux-x86_64.sh`
+  - `chmod +x Miniconda3-latest-Linux-x86_64.sh; ./Miniconda3-latest-Linux-x86_64.sh` (choose /scratch/cnt0024/ige2071/aalbert/conda/miniconda3 for where to install)
   - add in .bash_aliases `alias cond="export PATH='/scratch/cnt0024/ige2071/aalbert/conda/miniconda3/bin:$PATH'"`
   - `source .bash_aliases; cond`
   - `cd /scratch/cnt0024/ige2071/aalbert/conda/; mkdir caledo; tar -xzf caledo.tar.gz -C caledo`
   - `source caledo/bin/activate`
   - `python -m ipykernel install --user --name caledo --display-name caledo`
     
+## Notebook
 
+First terminal :
+  - connect to visu : `ssh -CY aalbert@visu.cines.fr`
+  - check if one visu is available : `vizqueue`, only 4 nodes visu1-4
+  - book one node for maximum 6h : `vizalloc -m vnc -t 360`, one node is allocated to you
+  
+Second terminal :
+  - connect to the visu node allocated to you : `ssh -CX aalbert@visu3.cines.fr`
+  - got to your notebook repo (same architecture than on occigen) znd launch jupyter notebook : `/scratch/cnt0024/ige2071/aalbert/conda/miniconda3/bin/jupyter-notebook --no-browser` (make an alias of it)
+  
+  - add `alias jupnb="export PATH="/scratch/cnt0024/ige2071/aalbert/conda/miniconda3/bin:$PATH"; jupyter-notebook --no-browser"` in your .bash_aliases, `source /home/aalbert/.bash_aliases`
+  - go to your notebooks repo and launch jupyter notebook with jupnb command
+
+Third terminal :
+  - launch vncviewer on the tunnel machine
+  - enter the name of the visu node you got in VNC server : `visu3.cines.fr:5901` , click on connect
+  - enter login & passwd
+  - a virtual machine is launching, slide up to get to the desktop
+  - click on Applications/Outils Sytem/Terminal
+  - `module load firefox; firefox` 
+  - copy the adress output for jupyter command in the firefox terminal
+  - 
     
   
 
