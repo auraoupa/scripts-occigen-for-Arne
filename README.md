@@ -92,6 +92,20 @@ slurmstepd: error: *** JOB 11538725 ON n1259 CANCELLED AT 2021-02-25T13:43:42 DU
 
 means that the job finished before the tasks were completed, meaning that you have to increase the walltime in the job it is the line : `#SBATCH --time=00:30:00`
 
+Once the monthly means are computed, you can compute the yearly mean :
+  - the generic script is :
+  - the job that calls it to compute the yearly mean for a given simulation :
+  - the cleaning script :
+
+Some other quantities may be computed :
+  - eddy, mean and total kinetic energy with cdfeke cdftools (https://github.com/meom-group/CDFTOOLS/blob/master/src/cdfeke.f90)
+    - it requires that monthly/annual means have been computed (and also quadratic means)
+    - the generic script is :
+    - the job :
+    - cleaning :
+  - curl
+  - rmsssh
+  
 ## Method 2
   
 ### Conda
