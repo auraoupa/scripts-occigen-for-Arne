@@ -18,7 +18,7 @@ For now, the outputs of simulations are on /store/CT1/hmg2840/lbrodeau/TROPICO12
 
 Two methodologies can be applied for you, depending on what you prefer and/or what is more efficient :
   - 1) bash scripts and fortran librairies to compute means, eke, rmssh, etc .. then whatever you prefer for plots
-  - 2) plots directly in python using jupyter-notebooks on visu nodes, attacking the raw outputs of simulation (no intermediate files)
+  - 2) plots directly in python using jupyter-notebooks on visu or frontal nodes, attacking the raw outputs of simulation (no intermediate files)
   
   
 Method 1 :
@@ -69,6 +69,16 @@ On occigen :
   
 ### Bash scripts
 
+Some examples of scripts that can be deployed for any TROPICO12-CALEDO60 simulation :
+  - some generic scripts that compute monthly means :
+    - https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/scripts/script_monthly_mean_TROPICO12.ksh
+    - https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/scripts/script_monthly_mean_CALEDO60.ksh
+  - jobs that call the above scripts to effectively compute monthly means for a given simulation :
+    - https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/scripts/make_monthly_mean_CALEDO60-TRPC12N00.ksh
+    - https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/scripts/make_monthly_mean_TROPICO12-TRPC12N00.ksh
+  - cleaning scripts :
+    - https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/scripts/clean_monthly_mean_CALEDO60-TRPC12N00.ksh
+    - https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/scripts/clean_monthly_mean_TROPICO12-TRPC12N00.ksh       
 
 ## Method 2
   
