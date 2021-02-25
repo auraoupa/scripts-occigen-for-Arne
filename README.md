@@ -80,17 +80,17 @@ Some examples of scripts that can be deployed for any TROPICO12-CALEDO60 simulat
     - https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/scripts/clean_monthly_mean_CALEDO60-TRPC12N00.ksh
     - https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/scripts/clean_monthly_mean_TROPICO12-TRPC12N00.ksh
 
-Do a '''chmod +x script.ksh''' for each one of them, in order to be able to execute them.
+Do a `chmod +x script.ksh` for each one of them, in order to be able to execute them.
 
-To launch the job the syntax is : '''sbatch make_monthly_mean_CALEDO60-TRPC12N00.ksh''', it will produce 2 outputs '''mean-cal.e$id_of_the_job''' (error) and '''mean-cal.e$id_of_the_job''' (output), always have a quick look to see if something went wrong, for instance the error :
+To launch the job the syntax is : `sbatch make_monthly_mean_CALEDO60-TRPC12N00.ksh`, it will produce 2 outputs `mean-cal.e$id_of_the_job` (error) and `mean-cal.e$id_of_the_job` (output), always have a quick look to see if something went wrong, for instance the error :
 
-'''
+```
 srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
 slurmstepd: error: *** STEP 11538725.0 ON n1259 CANCELLED AT 2021-02-25T13:43:42 DUE TO TIME LIMIT ***
 slurmstepd: error: *** JOB 11538725 ON n1259 CANCELLED AT 2021-02-25T13:43:42 DUE TO TIME LIMIT ***
-'''
+```
 
-means that the job finished before the tasks were completed, meaning that you have to increase the walltime in the job it is the line : '''#SBATCH --time=00:30:00'''
+means that the job finished before the tasks were completed, meaning that you have to increase the walltime in the job it is the line : `#SBATCH --time=00:30:00`
 
 ## Method 2
   
