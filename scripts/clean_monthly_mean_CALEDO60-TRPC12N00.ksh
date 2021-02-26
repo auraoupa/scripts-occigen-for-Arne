@@ -14,4 +14,5 @@ for filetyp in gridT-2D gridU-2D gridV-2D gridT gridS gridU gridV gridW flxT; do
 
 done
 
+rm mean-cal.e* mean-cal.o*
 	

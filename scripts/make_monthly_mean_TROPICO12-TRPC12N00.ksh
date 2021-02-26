@@ -5,7 +5,7 @@
 #SBATCH -J mean-trop
 #SBATCH -e mean-trop.e%j
 #SBATCH -o mean-trop.o%j
-#SBATCH --time=00:10:00
+#SBATCH --time=01:30:00
 #SBATCH --exclusive
 #SBATCH --constraint=HSW24
 

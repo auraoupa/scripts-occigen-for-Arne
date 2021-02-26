@@ -18,7 +18,7 @@ mm=$(printf "%02d" $MONTH)
 
 file_list=$(ls $stdir/*/${CONFIG}_NST-${CASE}_${FREQ}_${YEAR}${mm}??_${YEAR}${mm}??_${TYP}.nc4)
 
-fileo=${CONFIG}_NST-${CASE}_1m_${YEAR}${mm}_${TYP}
+fileo=${CONFIG}-${CASE}_1m_${YEAR}${mm}_${TYP}
 
 if [ ! -f  ${fileo}.nc ]; then 
 	ulimit -s unlimited

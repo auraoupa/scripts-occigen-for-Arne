@@ -5,7 +5,7 @@
 #SBATCH -J mean-cal
 #SBATCH -e mean-cal.e%j
 #SBATCH -o mean-cal.o%j
-#SBATCH --time=00:10:00
+#SBATCH --time=01:30:00
 #SBATCH --exclusive
 #SBATCH --constraint=HSW24
 

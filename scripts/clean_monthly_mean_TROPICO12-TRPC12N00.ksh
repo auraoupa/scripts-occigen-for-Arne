@@ -12,4 +12,5 @@ for filetyp in gridT-2D gridU-2D gridV-2D gridT gridS gridU gridV gridW flxT; do
 	done
 
 done
-	
+
+rm mean-trop.e* mean-trop.o*	
