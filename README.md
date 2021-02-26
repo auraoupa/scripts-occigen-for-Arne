@@ -13,6 +13,9 @@ Conda environments and git repo can have many files so better put it on scratch
 - `etat_projet` command to check on the quotas
 - `module list`to see what is already loaded and `module avail`to see what's available
 
+Also there are two types of nodes on which to log in :
+  - regular frontal node : `ssh -CX aalbert@occigen.cines.fr`
+  - visualization node : `ssh -CX aalbert@visu.cines.fr` on which we can deploy a visualization session https://www.cines.fr/calcul/materiels/visualisation/sessions-interactives-vnc/ (see below for details)
 
 For now, the outputs of simulations are on /store/CT1/hmg2840/lbrodeau/TROPICO12/
 
