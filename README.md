@@ -84,7 +84,8 @@ For method #2, you will need all the python librairies to deal with netcdf files
 On the tunnel machine :
   - install conda from installer :https://docs.conda.io/en/latest/miniconda.html
   - set up the environment with all librairies you want :
-    - `conda create --name myenv`
+    - `conda create --name caledo`
+    - `conda activate caledo
     - `conda install -c conda-forge netcdf4 xarray dask numpy seawater cartopy cmocean papermill jupyter conda-pack ipykernel seaborn`
   - `conda pack -n caledo`
   - `scp caledo.tar.gz aalbert@occigen.cines.fr:/scratch/cnt0024/ige2071/aalbert/conda/.`
