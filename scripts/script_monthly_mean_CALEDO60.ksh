@@ -12,7 +12,7 @@ dir=$SCRATCHDIR/${CONFIG}/${CONFIG}-${CASE}-MEAN/1m
 mkdir -p $dir
 cd $dir
 
-stdir=/store/CT1/hmg2840/lbrodeau/TROPICO12/TROPICO12_NST-$CASE-S
+stdir=/store/brodeau/TROPICO12/TROPICO12_NST-$CASE-S
 
 
 mm=$(printf "%02d" $MONTH)

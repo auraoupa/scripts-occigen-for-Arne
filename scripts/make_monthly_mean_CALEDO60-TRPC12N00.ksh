@@ -2,19 +2,24 @@
 
 #SBATCH --nodes=5
 #SBATCH --ntasks=108
-#SBATCH -J mean-cal
-#SBATCH -e mean-cal.e%j
-#SBATCH -o mean-cal.o%j
-#SBATCH --time=01:30:00
+#SBATCH -J mean1m-cal
+#SBATCH -e mean1m-cal.e%j
+#SBATCH -o mean1m-cal.o%j
+#SBATCH --time=05:30:00
 #SBATCH --exclusive
 #SBATCH --constraint=HSW24
 
 NB_NPROC=108 #(= 9 files * 12 month)
 
+CASE=TRPC12N00
+YEAR=2012
+
+
 runcode() { srun --mpi=pmi2 -m cyclic -n $@ ; }
 liste=''
 
-for filetyp in gridT-2D gridU-2D gridV-2D gridT gridS gridU gridV gridW flxT; do
+#for filetyp in gridT-2D gridU-2D gridV-2D gridT gridS gridU gridV gridW flxT; do
+for filetyp in gridT-2D gridU-2D gridV-2D gridU gridV gridW; do
 
 	case $filetyp in
 		gridT-2D|gridU-2D|gridV-2D|flxT) FREQ=1h;;
@@ -22,9 +27,9 @@ for filetyp in gridT-2D gridU-2D gridV-2D gridT gridS gridU gridV gridW flxT; do
 	esac
 
 	for month in $(seq 1 12); do
-		echo './script_monthly_mean_CALEDO60.ksh TRPC12N00 '$filetyp' '$FREQ' 2012 '$month >> tmp_monthly_mean_CALEDO60-TRPC12N00_${filetyp}_m${month}.ksh
-		chmod +x tmp_monthly_mean_CALEDO60-TRPC12N00_${filetyp}_m${month}.ksh
-		liste="$liste ./tmp_monthly_mean_CALEDO60-TRPC12N00_${filetyp}_m${month}.ksh"
+		echo './script_monthly_mean_CALEDO60_sq.ksh '$CASE' '$filetyp' '$FREQ' '$YEAR' '$month >> tmp_monthly_mean_CALEDO60-${CASE}_${filetyp}_y${YEAR}_m${month}.ksh
+		chmod +x tmp_monthly_mean_CALEDO60-${CASE}_${filetyp}_y${YEAR}_m${month}.ksh
+		liste="$liste ./tmp_monthly_mean_CALEDO60-${CASE}_${filetyp}_y${YEAR}_m${month}.ksh"
 	done
 
 done
