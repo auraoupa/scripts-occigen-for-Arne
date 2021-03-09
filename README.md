@@ -1,8 +1,6 @@
-# Scripts on occigen for Arne
+# Some informations on the occigen machine
 
-All there is to know to properly look at CALEDO simulations on occigen ...
-
-## About occigen machine
+In the following, I call tunnel machine the machine from which you connect to occigen (cal1 for MEOM people)
 
 ### Different workspaces
 
@@ -56,10 +54,12 @@ There are two types of nodes on which to log in :
 #SBATCH --exclusive
 #SBATCH --constraint=HSW24
 ```
+
+  - you must specify :
     - tasks : the number of proc you actually need, must be lower than number of node x 28 (28 cores per node)
-    - you choose on which nodes (CPU  : HSW24 & BDW28 or VISU) you submit your job to by changing the line `#SBATCH --constraint=HSW24` in your job script.
+    - you choose on which nodes (CPU  : HSW24 & BDW28 or VISU) you submit your job to by changing the line `#SBATCH --constraint=HSW24` 
     - 1 node and 6h max for VISU nodes
-    - less than 24h for CPU nodes 
+    - less than 24h for CPU nodes (<30mn jobs are running almost immediately)
   - You submit the job by typing : `sbatch your_job_script.ksh`
   - You check your job status by typing : `squeue -u your_login`
 
@@ -126,11 +126,13 @@ Third terminal :
   - a virtual machine is launching, slide up to get to the desktop
 
 
-![](img/vncviewer.png)
+![](https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/img/vncviewer.png)
 
   - click on Applications/Outils Sytem/Terminal
   - `module load firefox; firefox` 
   - copy the adress output for jupyter command in the firefox terminal
+
+![](https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/img/3terminals.png)
 
 To access the ressources of the visu node with dask, in a cell  :
 ```
@@ -142,7 +144,7 @@ c
 
 you should get access to the dask dashboard by clicking on the link :
 
-![](img/dask-dashboard-visu.png)
+![](https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/img/dask-dashboard-visu.png)
 
 A complete notebook can be found here : https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/notebooks/visu/2021-02-25-AA-map-yearly-mean-surface-fields-caledo.ipynb
 
@@ -195,124 +197,5 @@ if all(memory):
 print(text)
 ```
 
-  - for this particular example, the answer should be : `Workers= 28, Cores=28, Memory=120.12 GB`
+  - for this particular example, the answer should be : `Workers= 28, Cores=28, Memory=120.12 GB` before you can proceed with your computation
   - for examples with more nodes involved, see https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/notebooks/occigen/2020-12-10-AA-temp-mean-zarr-2node-HSW24-test1.ipynb and other notebooks in https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/notebooks/occigen
-
-
-
-## About CALEDO simulations
-
-For now, the outputs of simulations are on /store/CT1/hmg2840/lbrodeau/TROPICO12/
-
-Since the size of data are not yet problematic, two methodologies can be applied for you, depending on what you prefer and/or what is more efficient :
-  - 1) bash scripts and fortran librairies to compute means, eke, rmssh, etc .. then whatever you prefer for plots
-  - 2) plots directly in python using jupyter-notebooks on visu or frontal nodes, attacking the raw outputs of simulation (no intermediate files)
-  
-  
-Method 1 :
-
-  - install CDFTOOLS
-  - bash scripts + mpi + job submission
-  
-Method 2 :
-
-  - install conda environment (conda-pack or svp)
-  - vncviewer on tunnel machine
-  - notebooks
-  
-Or a mix of the two, first compute some means and diags with CDFTOOLS and plots with jupyter notebooks.
-
-## The use of tools on occigen
-
-### Git
-
-To keep track of the scripts with git repo, backed-up on github 
-
-~~On occigen :~~
-~~- create a repository where to store all your git repo (on scratch), for instance `/scratch/cnt0024/ige2071/aalbert/git`~~
-~~On the tunnel machine :~~
-~~- create a repo that will mirror the one on occigen, in my case `alberta@ige-meom-cal1:~/sshfs-occ-aalbert`~~
-~~- `cd; sshfs aalbert@occigen.cines.fr:/scratch/cnt0024/ige2071/aalbert/git sshfs-occ-aalbert` ~~
-~~- `cd sshfs-occ-aalbert`~~
- 
- Use git commands like anywhere (git clone, git pull, git add + commit + push)
-  
-### CDFTOOLS
-
-For any fortran code, load the following modules (in your .bashrc) :
-
-```
-module load intel
-module load openmpi/intel/2.0.1
-module load hdf5/1.8.17
-module load netcdf/4.4.0_fortran-4.4.2
-```
-
-On the tunnel machine :
-  - go to to the repo that mirrors occigen repo for git (see above, redo the sshfs command if needed)
-  - `git clone https://github.com/meom-group/CDFTOOLS.git`
-  
-On occigen :
-  - follow the instructions here : https://github.com/meom-group/CDFTOOLS (use macro.occigen2 and be sure to have WORKDIR defined and the modules loaded)
-  - the executables are now in /scratch/cnt0024/ige2071/aalbert/git/CDFTOOLS/bin
-
-
-
-
-
-## More specific scripts for your analysis
-
-### Bash scripts
-
-How to automate the computing of means and diags.
-
-Some examples of scripts that can be deployed for any TROPICO12-CALEDO60 simulation :
-  - some generic scripts that compute monthly means :
-    - https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/scripts/script_monthly_mean_TROPICO12.ksh
-    - https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/scripts/script_monthly_mean_CALEDO60.ksh
-  - jobs that call the above scripts to effectively compute monthly means for a given simulation :
-    - https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/scripts/make_monthly_mean_CALEDO60-TRPC12N00.ksh
-    - https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/scripts/make_monthly_mean_TROPICO12-TRPC12N00.ksh
-  - cleaning scripts :
-    - https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/scripts/clean_monthly_mean_CALEDO60-TRPC12N00.ksh
-    - https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/scripts/clean_monthly_mean_TROPICO12-TRPC12N00.ksh
-
-Do a `chmod +x script.ksh` for each one of them, in order to be able to execute them.
-
-To launch the job the syntax is : `sbatch make_monthly_mean_CALEDO60-TRPC12N00.ksh`, it will produce 2 outputs `mean-cal.e$id_of_the_job` (error) and `mean-cal.e$id_of_the_job` (output), always have a quick look to see if something went wrong, for instance the error :
-
-```
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 11538725.0 ON n1259 CANCELLED AT 2021-02-25T13:43:42 DUE TO TIME LIMIT ***
-slurmstepd: error: *** JOB 11538725 ON n1259 CANCELLED AT 2021-02-25T13:43:42 DUE TO TIME LIMIT ***
-```
-
-means that the job finished before the tasks were completed, meaning that you have to increase the walltime in the job it is the line : `#SBATCH --time=00:30:00`
-
-Once the monthly means are computed, you can compute the yearly mean :
-  - the generic script is :
-  - the job that calls it to compute the yearly mean for a given simulation :
-  - the cleaning script :
-
-Some other quantities may be computed :
-  - eddy, mean and total kinetic energy with cdfeke cdftools (https://github.com/meom-group/CDFTOOLS/blob/master/src/cdfeke.f90)
-    - it requires that monthly/annual means have been computed (and also quadratic means)
-    - the generic script is :
-    - the job :
-    - cleaning :
-  - curl
-  - rmsssh
-  
-Finally you can make all of it running for one simulation with one big master script that will submits various jobs one after the other :
-
-
-### Notebooks
-
-  - plots of yearly means of surface fields from raw data :
-  - call the notebook for any simulation and year with papermill :
-    
-
-  
-    
-  
-
