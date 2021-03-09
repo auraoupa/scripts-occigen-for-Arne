@@ -29,7 +29,7 @@ esac
 case $MONTH in
 	1|3|5|7|8|10|12) dend=31;;
 	4|6|9|11) dend=30;;
-	2) case $YEAR in 
+	2) case $YEAR in
 		2012) dend=29;;
 		*) dend=28;;
 	esac;;
@@ -38,10 +38,7 @@ esac
 for day in $(seq 1 $dend); do
 	mm=$(printf "%02d" $MONTH)
 	dd=$(printf "%02d" $day)
-file_list=$(ls $stdir/*/NST/${CASE}-${CONFIG}_$FREQ_${YEAR}${mm}${dd}_${YEAR}${mm}${dd}_${filetyp}.nc4)
-
-fileo=${CONFIG}-${CASE}_1d_${YEAR}${mm}${dd}_${filetyp}.nc
-
-if [ ! -f  ${fileo}.nc ]; then echo ${fileo}; cdfmoy -l $file_list -o $fileo -nc4; fi
-
-
+  file_list=$(ls $stdir/*/NST/${CASE}-${CONFIG}_$FREQ_${YEAR}${mm}${dd}_${YEAR}${mm}${dd}_${filetyp}.nc4)
+  fileo=${CONFIG}-${CASE}_1d_${YEAR}${mm}${dd}_${filetyp}.nc
+  if [ ! -f  ${fileo}.nc ]; then echo ${fileo}; cdfmoy -l $file_list -o $fileo -nc4; fi
+done
