@@ -119,9 +119,13 @@ Third terminal :
 ![](img/login-visu-vncviewer.png)
 
   - enter login & passwd
+
+
 ![](img/login-occigen-visu.png)
 
   - a virtual machine is launching, slide up to get to the desktop
+
+
 ![](img/vncviewer.png)
 
 
