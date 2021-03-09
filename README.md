@@ -116,7 +116,7 @@ Third terminal :
   - launch vncviewer on the tunnel machine
   - enter the name of the visu node you got in VNC server : `visu3.cines.fr:5901` , click on connect
 
-<img src="https://github.com/auraoupa/scripts-occigen-for-Arne/img/login-visu-vncviewer.png" width=50% height=50%>
+<img src="https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/img/login-occigen-visu.png" width=50% height=50%>
 
   - enter login & passwd
 
