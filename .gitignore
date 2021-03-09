@@ -1,0 +1,6 @@
+notebooks/dask-worker-space
+notebooks/.ipynb_checkpoints
+*/*nc
+scripts/tmp*
+scripts/*.e*
+scripts/*.o*

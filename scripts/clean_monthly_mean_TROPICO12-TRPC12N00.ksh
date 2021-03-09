@@ -1,0 +1,15 @@
+#!/bin/bash
+
+CASE=TRPC12N00
+YEAR=2012
+
+for filetyp in gridT-2D gridU-2D gridV-2D gridT gridS gridU gridV gridW flxT; do
+
+	for month in $(seq 1 12); do
+		rm tmp_monthly_mean_TROPICO12-${CASE}_${filetyp}_y${YEAR}_m${month}.ksh
+	done
+
+done
+
+rm mean1m-trop.e* mean1m-trop.o*
+	
