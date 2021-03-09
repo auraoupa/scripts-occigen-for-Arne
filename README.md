@@ -96,8 +96,8 @@ For more freedom here is a workflow to set up your own conda environment on occi
 ### Jupyter Notebook
 
 On occigen you have the choice between :
-  - running 6h on one out of 4 specific nodes with large memory when 1 is available (256Go) : the visu solution (needs vncviewer installed and port 5901 open on your login machine)
-  - running 30mn whenever you want with access to multiple CPU nodes (64/128Go) : the frontal solution
+  - running (smoothly) 6h on one out of 4 specific nodes with large memory when 1 is available (256Go) : the visu solution (needs vncviewer installed and port 5901 open on your login machine)
+  - running (less smoothly except if you are directly on the tunnel machine) 30mn whenever you want with access to multiple CPU nodes (64/128Go) : the frontal solution
   
 #### Running on visu node
 
@@ -128,16 +128,31 @@ Third terminal :
 
 ![](img/vncviewer.png)
 
-
   - click on Applications/Outils Sytem/Terminal
   - `module load firefox; firefox` 
   - copy the adress output for jupyter command in the firefox terminal
+
+To access the ressources of the visu node with dask, in a cell  :
+```
+from dask.distributed import Client, LocalCluster
+cluster = LocalCluster()
+c = Client(cluster)
+c
+```
+
+you should get access to the dask dahsboard by clicking on the link :
+
+![](img/dask-dashboard-visu.png)
+
+A complete notebook can be found here : https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/notebooks/visu/2021-02-25-AA-map-yearly-mean-surface-fields-caledo.ipynb
 
 #### Running on frontal nodes
 
 *Be careful not to compute directly on login nodes, always ask for CPU ressources first with dask-jobqueue*
 
 Job submitted inside the notebook to access the CPU nodes (28 cores, 64/128Go, 30mn)
+
+We need two different terminals because firefox and the jupyter notebooks cannot be run together (not sure why, because of conda I guess)
 
 First terminal :
   - connect to occigen : `ssh -CY aalbert@occigen.cines.fr`
@@ -147,6 +162,42 @@ Second terminal :
   - log to occigen and do it until you get the same login node (login0-1-2-3)
   - `module load firefox;firefox &`
   - copy the adress output for jupyter command in the firefox terminal
+
+To access the ressources from CPU nodes with dask-jobqueue :
+  - first submit a job (example for one node) :
+```
+ask_workers=28
+memory='120GB'
+from dask_jobqueue import SLURMCluster 
+from dask.distributed import Client 
+  
+cluster = SLURMCluster(cores=28,name='pangeo',walltime='00:30:00',
+                       job_extra=['--constraint=HSW24','--exclusive',
+                                  '--nodes=1'],memory=memory,
+                       interface='ib0') 
+cluster.scale(ask_workers)
+c= Client(cluster)
+c
+```
+  - wait for the job to be running (check with squeue the status)
+  - check in the notebook how many workers are running :
+```
+from dask.utils import ensure_dict, format_bytes
+    
+wk = c.scheduler_info()["workers"]
+
+text="Workers= " + str(len(wk))
+memory = [w["memory_limit"] for w in wk.values()]
+cores = sum(w["nthreads"] for w in wk.values())
+text += ", Cores=" + str(cores)
+if all(memory):
+    text += ", Memory=" + format_bytes(sum(memory))
+print(text)
+```
+
+  - for this particular example, the answer should be : `Workers= 28, Cores=28, Memory=120.12 GB``
+  - for examples with more nodes involved, see https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/notebooks/occigen/2020-12-10-AA-temp-mean-zarr-2node-HSW24-test1.ipynb and other notebooks in https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/notebooks/occigen
+
 
 
 ## About CALEDO simulations
