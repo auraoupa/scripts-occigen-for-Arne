@@ -140,7 +140,7 @@ c = Client(cluster)
 c
 ```
 
-you should get access to the dask dahsboard by clicking on the link :
+you should get access to the dask dashboard by clicking on the link :
 
 ![](img/dask-dashboard-visu.png)
 
@@ -148,7 +148,7 @@ A complete notebook can be found here : https://github.com/auraoupa/scripts-occi
 
 #### Running on frontal nodes
 
-*Be careful not to compute directly on login nodes, always ask for CPU ressources first with dask-jobqueue*
+**Be careful not to compute directly on login nodes, always ask for CPU ressources first with dask-jobqueue**
 
 Job submitted inside the notebook to access the CPU nodes (28 cores, 64/128Go, 30mn)
 
@@ -164,7 +164,7 @@ Second terminal :
   - copy the adress output for jupyter command in the firefox terminal
 
 To access the ressources from CPU nodes with dask-jobqueue :
-  - first submit a job (example for one node) :
+  - first submit a job inside the notebook (example for one node) :
 ```
 ask_workers=28
 memory='120GB'
@@ -195,7 +195,7 @@ if all(memory):
 print(text)
 ```
 
-  - for this particular example, the answer should be : `Workers= 28, Cores=28, Memory=120.12 GB``
+  - for this particular example, the answer should be : `Workers= 28, Cores=28, Memory=120.12 GB`
   - for examples with more nodes involved, see https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/notebooks/occigen/2020-12-10-AA-temp-mean-zarr-2node-HSW24-test1.ipynb and other notebooks in https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/notebooks/occigen
 
 
