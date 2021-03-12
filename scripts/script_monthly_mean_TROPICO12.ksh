@@ -7,7 +7,7 @@ FREQ=$3
 YEAR=$4
 MONTH=$5
 
-dir=$SCRATCHDIR/${CONFIG}/${CONFIG}-${CASE}-MEAN/1m
+dir=$SCRATCHDIR/${CONFIG}/${CONFIG}-${CASE}-MEAN/1m/$YEAR
 
 mkdir -p $dir
 cd $dir
