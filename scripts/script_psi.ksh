@@ -31,6 +31,9 @@ filepsi=${CONFIG}-${CASE}_${TAG}_PSI.nc
 if [ ! -f  ${filepsi} ]; then 
 	ulimit -s unlimited
 	echo ${filepsi}
-	/scratch/cnt0024/ige2071/aalbert/git/CDFTOOLS/bin/cdfpsi -u $ufile -v $vfile -o $filepsi
+	case $CONFIG in
+		CALEDO60) /scratch/cnt0024/ige2071/aalbert/git/CDFTOOLS/bin/cdfpsi -u $ufile -v $vfile -o $filepsi;;
+		TROPICO12) /scratch/cnt0024/ige2071/aalbert/git/CDFTOOLS/bin/cdfpsi -u $ufile -v $vfile -ref 1650 850 -o $filepsi;;
+	esac
 fi
 

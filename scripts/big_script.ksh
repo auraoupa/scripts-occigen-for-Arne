@@ -1,6 +1,6 @@
 #!/bin/bash
 
-YEAR=2012
+YEAR=2013
 CASE=TRPC12N00
 
 #Clean before launching
