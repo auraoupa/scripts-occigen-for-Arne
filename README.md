@@ -8,7 +8,7 @@ In the following, I call tunnel machine the machine from which you connect to oc
 
 On occigen, there are 3 types of space :
   - your home (/home/abendinger), limited to 100G 30 000 files
-  - your scratch (/scratch/cnt0024/ige2071/abendinger), common space between all memebers of ige2071 group, limited to 20,480 Tb 900 000files in total
+  - your scratch (/scratch/cnt0024/ige2071/abendinger), common space between all members of ige2071 group, limited to 20,480 Gb 900 000files in total
   - your store ( /store/abendinger ), limitations on number of inodes depending on the project (it looks like it is not reinforced yet for we are way above the 9000 files limit ...
   - the `etat_projet` command allows user to know whether the quotas are exceeding and where
   - be careful not to be over quota, this will prevent all people in the group to submit jobs !
