@@ -5,7 +5,7 @@
 #SBATCH -J mean1m
 #SBATCH -e mean1m.e%j
 #SBATCH -o mean1m.o%j
-#SBATCH --time=05:30:00
+#SBATCH --time=01:30:00
 #SBATCH --exclusive
 #SBATCH --constraint=HSW24
 
