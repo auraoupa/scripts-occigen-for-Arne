@@ -91,6 +91,17 @@ ln -s -v ${SCRATCHDIR}/MY_CONDA/.conda
 
 ~Occigen do not allow conda installs directly but you can use pip.~
 
+*Update of the update * :
+
+I installed a new environment with : 
+```
+module load /opt/software/alfred/spack-dev/modules/tools/linux-rhel7-x86_64/miniconda3/4.7.12.1-gcc-4.8.5
+conda create --prefix $SCRATCHDIR/envs/caledo0521 -c conda-forge netcdf4 xarray dask numpy seawater cartopy cmocean papermill jupyter jupyterlab ipykernel seaborn
+conda activate /scratch/cnt0024/ige2071/aalbert/envs/caledo0521
+(the first time you may need to doa conda init bash, exit et reconnect)
+```
+
+
 You can always ask svp@cines.fr to set up a conda environment for you with the list of libraries you need.
 
 For more freedom here is a workflow to set up your own conda environment on occigen :
@@ -100,7 +111,7 @@ For more freedom here is a workflow to set up your own conda environment on occi
   - set up a conda environment with all librairies you want :
     - `conda create --name caledo`
     - `conda activate caledo
-    - `conda install -c conda-forge netcdf4 xarray dask numpy seawater cartopy cmocean papermill jupyter conda-pack ipykernel seaborn`
+    - `conda install -c conda-forge netcdf4 xarray dask dask_jobqueue numpy seawater cartopy cmocean papermill jupyter conda-pack ipykernel seaborn`
   - `conda pack -n caledo`
   - `scp caledo.tar.gz aalbert@occigen.cines.fr:/scratch/cnt0024/ige2071/aalbert/conda/.`
   - `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
