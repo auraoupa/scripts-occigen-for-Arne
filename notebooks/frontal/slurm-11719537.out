@@ -1,0 +1,122 @@
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.5.153:40414'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.5.153:39303'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.5.153:38557'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.5.153:41046'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.5.153:36281'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.5.153:45221'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.5.153:33623'
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-5dw5r82n', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-gf1_l6ku', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-xtc4nyvi', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-h3vdxxto', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-wj03e3af', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-_2v1kkf8', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-g2tim4ju', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-hmoqcnb2', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-3ciez6ye', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-der5vw3a', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-gd9jxhdp', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-axp8i2rr', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-9i51l56q', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-9v4hudvm', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-_ne85v2v', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-6cpdrnu1', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-v7m14nu0', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-m5tie67n', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-p9h9ydde', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-j_jz5sfw', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-2sys47mh', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-z0w8u53b', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-5eiyf9bc', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-fxpvidcx', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-cbwt5ga5', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-pzu8ezsz', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-hmyu3fng', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-t4vjhktg', purging
+/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/contextlib.py:124: UserWarning: Creating scratch directories is taking a surprisingly long time. This is often due to running workers on a network file system. Consider specifying a local-directory to point workers to write scratch data to a local disk.
+  next(self.gen)
+distributed.worker - INFO -       Start worker at:   tcp://172.30.5.153:46792
+distributed.worker - INFO -       Start worker at:   tcp://172.30.5.153:35043
+distributed.worker - INFO -       Start worker at:   tcp://172.30.5.153:33703
+distributed.worker - INFO -          Listening to:   tcp://172.30.5.153:46792
+distributed.worker - INFO -       Start worker at:   tcp://172.30.5.153:33792
+distributed.worker - INFO -          Listening to:   tcp://172.30.5.153:35043
+distributed.worker - INFO -       Start worker at:   tcp://172.30.5.153:43600
+distributed.worker - INFO -          Listening to:   tcp://172.30.5.153:33703
+distributed.worker - INFO -          dashboard at:         172.30.5.153:34243
+distributed.worker - INFO -       Start worker at:   tcp://172.30.5.153:42983
+distributed.worker - INFO -          Listening to:   tcp://172.30.5.153:33792
+distributed.worker - INFO -          dashboard at:         172.30.5.153:37481
+distributed.worker - INFO -          Listening to:   tcp://172.30.5.153:43600
+distributed.worker - INFO -          dashboard at:         172.30.5.153:32897
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:45254
+distributed.worker - INFO -       Start worker at:   tcp://172.30.5.153:38025
+distributed.worker - INFO -          Listening to:   tcp://172.30.5.153:42983
+distributed.worker - INFO -          dashboard at:         172.30.5.153:35665
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:45254
+distributed.worker - INFO -          dashboard at:         172.30.5.153:46055
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:45254
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          Listening to:   tcp://172.30.5.153:38025
+distributed.worker - INFO -          dashboard at:         172.30.5.153:33213
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:45254
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:45254
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:         172.30.5.153:39772
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:45254
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:45254
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-fyo1g85g
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-o1saklni
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-h4kl4v02
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-3vnvmgtg
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-w759c43j
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-uixat824
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-hzt69i7o
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:45254
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:45254
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:45254
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:45254
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:45254
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:45254
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:45254
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+slurmstepd: error: *** JOB 11719537 ON n2128 CANCELLED AT 2021-04-26T14:56:39 ***

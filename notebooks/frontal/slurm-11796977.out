@@ -1,0 +1,93 @@
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.6.208:38189'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.6.208:41340'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.6.208:35920'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.6.208:34011'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.6.208:38096'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.6.208:44000'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.6.208:46202'
+distributed.worker - INFO -       Start worker at:   tcp://172.30.6.208:40844
+distributed.worker - INFO -       Start worker at:   tcp://172.30.6.208:34782
+distributed.worker - INFO -       Start worker at:   tcp://172.30.6.208:35427
+distributed.worker - INFO -       Start worker at:   tcp://172.30.6.208:36576
+distributed.worker - INFO -       Start worker at:   tcp://172.30.6.208:40936
+distributed.worker - INFO -          Listening to:   tcp://172.30.6.208:40844
+distributed.worker - INFO -       Start worker at:   tcp://172.30.6.208:46529
+distributed.worker - INFO -          Listening to:   tcp://172.30.6.208:35427
+distributed.worker - INFO -          Listening to:   tcp://172.30.6.208:34782
+distributed.worker - INFO -       Start worker at:   tcp://172.30.6.208:37859
+distributed.worker - INFO -          Listening to:   tcp://172.30.6.208:36576
+distributed.worker - INFO -          Listening to:   tcp://172.30.6.208:40936
+distributed.worker - INFO -          dashboard at:         172.30.6.208:41755
+distributed.worker - INFO -          Listening to:   tcp://172.30.6.208:46529
+distributed.worker - INFO -          dashboard at:         172.30.6.208:46775
+distributed.worker - INFO -          dashboard at:         172.30.6.208:36809
+distributed.worker - INFO -          Listening to:   tcp://172.30.6.208:37859
+distributed.worker - INFO -          dashboard at:         172.30.6.208:32976
+distributed.worker - INFO -          dashboard at:         172.30.6.208:37712
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:46224
+distributed.worker - INFO -          dashboard at:         172.30.6.208:42233
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:46224
+distributed.worker - INFO -          dashboard at:         172.30.6.208:33955
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-6wnwuft_
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-zjh32g88
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-tix6gaau
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-sefn_zth
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-qu1memoh
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-rt65k2z7
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-4z4gkecp
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:46224
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.utils_perf - INFO - full garbage collection released 18.77 MB from 174 reference cycles (threshold: 10.00 MB)
+slurmstepd: error: *** JOB 11796977 ON n2439 CANCELLED AT 2021-05-18T19:25:09 DUE TO TIME LIMIT ***

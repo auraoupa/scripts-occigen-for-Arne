@@ -1,0 +1,106 @@
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.8.14:38664'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.8.14:38709'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.8.14:34613'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.8.14:40647'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.8.14:34775'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.8.14:37717'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.8.14:34255'
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-uixat824', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-w759c43j', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-hzt69i7o', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-yfg_6yyi', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-0_5y0be8', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-3vnvmgtg', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-o1saklni', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-h4kl4v02', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-tjk7k5al', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-fyo1g85g', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-hjqmd2dc', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-_rrdahri', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-6g8koyy7', purging
+distributed.diskutils - INFO - Found stale lock file and directory '/scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-hfgnlqu7', purging
+distributed.worker - INFO -       Start worker at:    tcp://172.30.8.14:42300
+distributed.worker - INFO -       Start worker at:    tcp://172.30.8.14:33608
+distributed.worker - INFO -       Start worker at:    tcp://172.30.8.14:34088
+distributed.worker - INFO -          Listening to:    tcp://172.30.8.14:42300
+distributed.worker - INFO -       Start worker at:    tcp://172.30.8.14:46230
+distributed.worker - INFO -          Listening to:    tcp://172.30.8.14:33608
+distributed.worker - INFO -       Start worker at:    tcp://172.30.8.14:33186
+distributed.worker - INFO -       Start worker at:    tcp://172.30.8.14:36174
+distributed.worker - INFO -          Listening to:    tcp://172.30.8.14:34088
+distributed.worker - INFO -       Start worker at:    tcp://172.30.8.14:33116
+distributed.worker - INFO -          dashboard at:          172.30.8.14:38989
+distributed.worker - INFO -          Listening to:    tcp://172.30.8.14:46230
+distributed.worker - INFO -          dashboard at:          172.30.8.14:38171
+distributed.worker - INFO -          Listening to:    tcp://172.30.8.14:33186
+distributed.worker - INFO -          Listening to:    tcp://172.30.8.14:36174
+distributed.worker - INFO -          dashboard at:          172.30.8.14:43117
+distributed.worker - INFO -          Listening to:    tcp://172.30.8.14:33116
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:46224
+distributed.worker - INFO -          dashboard at:          172.30.8.14:35654
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:46224
+distributed.worker - INFO -          dashboard at:          172.30.8.14:36237
+distributed.worker - INFO -          dashboard at:          172.30.8.14:43000
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -          dashboard at:          172.30.8.14:41591
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - Waiting to connect to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-oi6zgr5g
+distributed.worker - INFO -               Threads:                          4
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-9qzd1trv
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-wql6_5ja
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO -                Memory:                   17.14 GB
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-svzgayo6
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-yc0ruv62
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-ba4bdvfv
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -       Local Directory: /scratch/cnt0024/ige2071/aalbert/git/scripts-occigen-for-Arne/notebooks/frontal/dask-worker-space/dask-worker-space/worker-p5adrp9d
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - INFO -         Registered to:   tcp://172.30.100.1:46224
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+slurmstepd: error: *** JOB 11796978 ON n2453 CANCELLED AT 2021-05-18T19:25:09 DUE TO TIME LIMIT ***

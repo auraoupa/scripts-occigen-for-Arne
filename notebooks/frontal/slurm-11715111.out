@@ -1,0 +1,68 @@
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.8.102:33980'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.8.102:34956'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.8.102:36060'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.8.102:36987'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.8.102:36406'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.8.102:39994'
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.30.8.102:36688'
+distributed.nanny - INFO - Closing Nanny at 'tcp://172.30.8.102:34956'
+distributed.nanny - INFO - Closing Nanny at 'tcp://172.30.8.102:36060'
+distributed.nanny - INFO - Closing Nanny at 'tcp://172.30.8.102:36987'
+distributed.nanny - INFO - Closing Nanny at 'tcp://172.30.8.102:36406'
+distributed.nanny - INFO - Closing Nanny at 'tcp://172.30.8.102:39994'
+distributed.nanny - INFO - Closing Nanny at 'tcp://172.30.8.102:36688'
+distributed.dask_worker - INFO - End worker
+Traceback (most recent call last):
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/distributed/core.py", line 274, in _
+    await asyncio.wait_for(self.start(), timeout=timeout)
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/asyncio/tasks.py", line 478, in wait_for
+    return fut.result()
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/distributed/nanny.py", line 295, in start
+    response = await self.instantiate()
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/distributed/nanny.py", line 365, in instantiate
+    result = await asyncio.wait_for(
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/asyncio/tasks.py", line 478, in wait_for
+    return fut.result()
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/distributed/nanny.py", line 575, in start
+    await self.process.start()
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/distributed/process.py", line 33, in _call_and_set_future
+    res = func(*args, **kwargs)
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/distributed/process.py", line 203, in _start
+    process.start()
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/multiprocessing/context.py", line 283, in _Popen
+    from .popen_spawn_posix import Popen
+ImportError: cannot import name 'Popen' from partially initialized module 'multiprocessing.popen_spawn_posix' (most likely due to a circular import) (/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/multiprocessing/popen_spawn_posix.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/distributed/cli/dask_worker.py", line 469, in <module>
+    go()
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/distributed/cli/dask_worker.py", line 465, in go
+    main()
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/distributed/cli/dask_worker.py", line 451, in main
+    loop.run_sync(run)
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/tornado/ioloop.py", line 530, in run_sync
+    return future_cell[0].result()
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/distributed/cli/dask_worker.py", line 445, in run
+    await asyncio.gather(*nannies)
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/asyncio/tasks.py", line 687, in _wrap_awaitable
+    return (yield from awaitable.__await__())
+  File "/scratch/cnt0024/ige2071/aalbert/conda/caledo/lib/python3.9/site-packages/distributed/core.py", line 278, in _
+    raise TimeoutError(
+asyncio.exceptions.TimeoutError: Nanny failed to start in 60 seconds
+distributed.process - INFO - reaping stray process <SpawnProcess name='Dask Worker process (from Nanny)' pid=35315 parent=35244 started daemon>
